@@ -15,21 +15,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "XOFI — Love, Peace, and Good Coffee",
+  title: "Fiction Cafe — Brewed With Imagination",
   description:
-    "XOFI is a cozy cafe in Gong Badak, Kuala Terengganu. Expertly crafted coffee, ice blended drinks, and pastries — your go-to spot for great vibes and better coffee.",
+    "Fiction Cafe is a cozy cafe where stories meet coffee. Expertly crafted coffee, ice blended drinks, and pastries — your go-to spot for great vibes and better coffee.",
   openGraph: {
-    title: "XOFI — Love, Peace, and Good Coffee",
+    title: "Fiction Cafe — Brewed With Imagination",
     description:
-      "Expertly crafted coffee, ice blended drinks, and pastries — all at pocket-friendly prices. Visit us in Gong Badak, Kuala Terengganu.",
-    url: "https://xofi.com.my",
-    siteName: "XOFI",
+      "Expertly crafted coffee, ice blended drinks, and pastries — all at pocket-friendly prices. A cafe where every cup tells a story.",
+    siteName: "Fiction Cafe",
     locale: "en_MY",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "XOFI — Love, Peace, and Good Coffee",
+    title: "Fiction Cafe — Brewed With Imagination",
     description:
       "Expertly crafted coffee, ice blended drinks, and pastries — all at pocket-friendly prices.",
   },

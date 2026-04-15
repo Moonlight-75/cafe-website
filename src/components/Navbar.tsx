@@ -21,7 +21,7 @@ export default function Navbar() {
           <div className="relative w-10 h-10 rounded-full overflow-hidden">
             <PlaceholderImage
               src="/images/logo.png"
-              alt="XOFI"
+              alt="Fiction Cafe"
               width={40}
               height={40}
               className="object-cover"
@@ -30,10 +30,10 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col leading-none">
             <span className="text-xl font-bold text-cream-50 tracking-wider">
-              XOFI
+              FICTION
             </span>
             <span className="text-[10px] font-medium text-cream-400 tracking-[0.3em]">
-              TRG
+              CAFE
             </span>
           </div>
         </Link>

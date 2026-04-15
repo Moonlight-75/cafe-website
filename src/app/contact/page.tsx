@@ -3,34 +3,28 @@ import ContactForm from "@/components/ContactForm";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export const metadata: Metadata = {
-  title: "Contact — XOFI",
+  title: "Contact — Fiction Cafe",
   description:
-    "Find XOFI at Gong Badak, Kuala Terengganu. Open daily 9AM–10PM (closed Fridays).",
+    "Find Fiction Cafe at Imagination District, Kuala Lumpur. Open daily 9AM–10PM.",
   openGraph: {
-    title: "Contact — XOFI",
+    title: "Contact — Fiction Cafe",
     description:
-      "Find XOFI at Gong Badak, Kuala Terengganu. Open daily 9AM–10PM (closed Fridays).",
+      "Find Fiction Cafe at Imagination District, Kuala Lumpur. Open daily 9AM–10PM.",
   },
 };
 
 const locations = [
   {
-    name: "XOFI Gong Badak",
-    address: "Lot 7825-2, Jalan Kubur Shariff, Taman Baiduri, 21300 Kuala Terengganu",
-    hours: "9:00 AM – 7:00 PM, 8:00 PM – 10:00 PM",
-    closed: "Friday",
+    name: "Fiction Cafe — Main Branch",
+    address: "123 Storybook Lane, Imagination District, Kuala Lumpur",
+    hours: "9:00 AM – 10:00 PM",
+    closed: "None",
   },
   {
-    name: "XOFI Jalan Sultan Omar",
-    address: "Jalan Sultan Omar, Kuala Terengganu",
-    hours: "9:00 AM – 7:00 PM, 8:00 PM – 10:00 PM",
-    closed: "Friday",
-  },
-  {
-    name: "XOFI Chukai",
-    address: "Chukai, Terengganu",
-    hours: "3:00 PM – 11:00 PM",
-    closed: "Friday",
+    name: "Fiction Cafe — Chapter Two",
+    address: "45 Novel Street, Arts Quarter, Kuala Lumpur",
+    hours: "9:00 AM – 10:00 PM",
+    closed: "None",
   },
 ];
 
@@ -83,42 +77,42 @@ export default function ContactPage() {
                 </h2>
                 <div className="flex gap-4">
                   <a
-                    href="https://www.instagram.com/xofi.trg/"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-warm-700 hover:text-warm-800 transition-colors"
                   >
-                    Instagram (@xofi.trg)
+                    Instagram (@fictioncafe)
                   </a>
                   <a
-                    href="https://www.facebook.com/xofi.trg/"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-warm-700 hover:text-warm-800 transition-colors"
                   >
-                    Facebook (XOFI.trg)
+                    Facebook (Fiction Cafe)
                   </a>
                   <a
-                    href="https://www.tiktok.com/@xofi.trg"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-warm-700 hover:text-warm-800 transition-colors"
                   >
-                    TikTok (@xofi.trg)
+                    TikTok (@fictioncafe)
                   </a>
                 </div>
               </div>
 
               <div className="rounded-2xl overflow-hidden aspect-[16/9]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.5!2d103.12!3d5.32!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7c91229b1b2d7%3A0x0!2sXOFI%20Gong%20Badak!5e0!3m2!1sen!2smy!4v1700000000000!5m2!1sen!2smy"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8!2d101.69!3d3.14!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4955e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sKuala%20Lumpur!5e0!3m2!1sen!2smy!4v1700000000000!5m2!1sen!2smy"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="XOFI Gong Badak Location"
+                  title="Fiction Cafe Location"
                 />
               </div>
             </div>

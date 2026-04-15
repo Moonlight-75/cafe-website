@@ -9,16 +9,16 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-4">
               <div className="flex flex-col leading-none">
                 <span className="text-2xl font-bold text-cream-50 tracking-wider">
-                  XOFI
+                  FICTION
                 </span>
                 <span className="text-[10px] font-medium text-cream-400 tracking-[0.3em]">
-                  TRG
+                  CAFE
                 </span>
               </div>
             </Link>
             <p className="text-sm leading-relaxed text-cream-400">
-              Love, peace, and good coffee. Your cozy escape in Gong Badak,
-              Kuala Terengganu.
+              Brewed with imagination. A cozy cafe where stories meet coffee
+              and every cup sparks a new chapter.
             </p>
           </div>
 
@@ -48,23 +48,22 @@ export default function Footer() {
               Find Us
             </h4>
             <div className="flex flex-col gap-2 text-sm text-cream-400">
-              <p>Lot 7825-2, Jalan Kubur Shariff</p>
-              <p>Taman Baiduri, 21300</p>
-              <p>Kuala Terengganu, Terengganu</p>
-              <p className="mt-2">Mon–Thu, Sat–Sun: 9AM – 10PM</p>
-              <p>Friday: Closed</p>
+              <p>123 Storybook Lane</p>
+              <p>Imagination District</p>
+              <p>Kuala Lumpur, Malaysia</p>
+              <p className="mt-2">Mon–Sun: 9AM – 10PM</p>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-cream-400/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-cream-400/60">
-            &copy; {new Date().getFullYear()} XOFI GROUP SDN. BHD. All rights
+            &copy; {new Date().getFullYear()} Fiction Cafe. All rights
             reserved.
           </p>
           <div className="flex gap-6">
             <a
-              href="https://www.instagram.com/xofi.trg/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-cream-400/60 hover:text-warm-600 transition-colors"
@@ -72,7 +71,7 @@ export default function Footer() {
               Instagram
             </a>
             <a
-              href="https://www.facebook.com/xofi.trg/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-cream-400/60 hover:text-warm-600 transition-colors"
@@ -80,7 +79,7 @@ export default function Footer() {
               Facebook
             </a>
             <a
-              href="https://www.tiktok.com/@xofi.trg"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-cream-400/60 hover:text-warm-600 transition-colors"

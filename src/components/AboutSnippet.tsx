@@ -21,19 +21,19 @@ export default function AboutSnippet() {
             Our Story
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-3 tracking-tight leading-tight">
-            From KOFI to XOFI
+            Where Stories Begin
           </h2>
           <p className="text-cream-300 mt-6 leading-relaxed">
-            Established in 2020, XOFI started as KOFI — a small cafe with a big
-            dream of serving the best coffee in Kuala Terengganu. What began as
-            a humble spot has grown into a beloved local favourite with three
-            locations across Terengganu.
+            Fiction Cafe was born from a love of two things — great coffee and
+            great stories. We believe every cup should spark a conversation,
+            every visit should feel like a new chapter, and every customer
+            should leave feeling inspired.
           </p>
           <p className="text-cream-300 mt-4 leading-relaxed">
-            We believe great coffee should be accessible to everyone. That&apos;s
-            why we keep our prices pocket-friendly while never compromising on
+            We keep our prices pocket-friendly while never compromising on
             quality — from the beans we choose to the care our baristas put into
-            every cup.
+            every cup. Because the best stories are the ones everyone can
+            access.
           </p>
           <Link
             href="/about"
@@ -50,7 +50,7 @@ export default function AboutSnippet() {
         >
           <PlaceholderImage
             src="/images/about-cafe.jpg"
-            alt="XOFI Cafe Interior"
+            alt="Fiction Cafe Interior"
             fill
             className="object-cover"
             label="Cafe interior photo"

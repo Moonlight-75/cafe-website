@@ -6,9 +6,9 @@ import useScrollReveal from "@/hooks/useScrollReveal";
 
 const featured = [
   {
-    name: "XOF Latte",
+    name: "Fiction Latte",
     description:
-      "Our signature silky latte — the drink that put XOFI on the map. Smooth, rich, and perfectly balanced.",
+      "Our signature silky latte — the drink that started it all. Smooth, rich, and perfectly balanced with a hint of creativity.",
     price: "RM 6",
     category: "Signature",
     image: "/images/menu/xof-latte.jpg",

@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export const metadata: Metadata = {
-  title: "Menu — XOFI",
+  title: "Menu — Fiction Cafe",
   description:
-    "Browse XOFI's full menu — hot & iced coffee, ice blended drinks, and more. Affordable prices, expertly crafted.",
+    "Browse Fiction Cafe's full menu — hot & iced coffee, ice blended drinks, and more. Affordable prices, expertly crafted.",
   openGraph: {
-    title: "Menu — XOFI",
+    title: "Menu — Fiction Cafe",
     description:
-      "Browse XOFI's full menu — hot & iced coffee, ice blended drinks, and more. Affordable prices, expertly crafted.",
+      "Browse Fiction Cafe's full menu — hot & iced coffee, ice blended drinks, and more. Affordable prices, expertly crafted.",
   },
 };
 

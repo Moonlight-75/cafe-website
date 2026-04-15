@@ -26,7 +26,7 @@ export default function AboutPage() {
     <>
       <section className="bg-charcoal-900 text-cream-50 py-16 px-6 text-center">
         <span className="text-xs font-semibold text-warm-600 uppercase tracking-widest">
-          Since 2020
+          Since 2022
         </span>
         <h1 className="text-4xl md:text-5xl font-bold mt-3 tracking-tight">
           Our Story
@@ -38,33 +38,35 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <h2 className="text-2xl font-bold text-charcoal-900 tracking-tight">
-                From KOFI to XOFI
+                Where Stories Begin
               </h2>
               <div className="mt-6 space-y-4 text-charcoal-600 leading-relaxed">
                 <p>
-                  It all started in 2020 with a simple dream — serve the best
-                  coffee in Kuala Terengganu. Back then, we were called KOFI. A
-                  small spot, big dreams, and an unwavering belief that everyone
-                  deserves access to great coffee.
+                  Fiction Cafe started with a simple idea — what if a cafe
+                  could feel like your favourite book? A place where you walk
+                  in, the aroma of freshly brewed coffee wraps around you, and
+                  suddenly the world outside fades into the pages of something
+                  beautiful.
                 </p>
                 <p>
-                  As we grew, so did our identity. We rebranded to XOFI — a
-                  name that reflects who we&apos;ve become: bold, modern, and
-                  rooted in our community. Today, XOFI has three locations
-                  across Terengganu: Gong Badak, Jalan Sultan Omar, and Chukai.
+                  We crafted every corner with intention: warm lighting for late-
+                  night readers, cozy nooks for deep conversations, and a menu
+                  that reads like a bestseller. Each drink has a story — from
+                  our signature Fiction Latte to our seasonal chapter specials.
                 </p>
                 <p>
                   What hasn&apos;t changed is our commitment to quality,
                   affordability, and that warm, welcoming feeling you get the
-                  moment you walk through our doors. Whether you&apos;re a
-                  first-timer or a regular, we treat everyone like family.
+                  moment you walk through our doors. Whether you&apos;re here
+                  to work, read, catch up with friends, or simply exist —
+                  there&apos;s always a seat and a story waiting for you.
                 </p>
               </div>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <PlaceholderImage
                 src="/images/about-story.jpg"
-                alt="XOFI Story"
+                alt="Fiction Cafe Story"
                 fill
                 className="object-cover"
                 label="Story photo"

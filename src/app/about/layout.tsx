@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — XOFI",
+  title: "About — Fiction Cafe",
   description:
-    "Learn the story behind XOFI — from KOFI to three locations across Terengganu. Love, peace, and good coffee since 2020.",
+    "Learn the story behind Fiction Cafe — where stories meet coffee and every cup sparks a new chapter.",
 };
 
 export default function AboutLayout({

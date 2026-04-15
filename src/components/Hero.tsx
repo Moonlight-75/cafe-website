@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <PlaceholderImage
           src="/images/hero.jpg"
-          alt="XOFI Cafe"
+          alt="Fiction Cafe"
           fill
           className="object-cover"
           label="Hero background image"
@@ -19,17 +19,16 @@ export default function Hero() {
 
       <div className="relative max-w-6xl mx-auto px-6 py-32 md:py-44 flex flex-col items-center text-center w-full">
         <span className="text-sm font-medium text-warm-600 uppercase tracking-widest mb-4">
-          Gong Badak &middot; Kuala Terengganu
+          Where Stories Meet Coffee
         </span>
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 leading-tight">
-          Love, Peace, and
+          Brewed With
           <br />
-          <span className="text-warm-600">Good Coffee</span>
+          <span className="text-warm-600">Imagination</span>
         </h1>
         <p className="text-lg text-cream-300 max-w-xl leading-relaxed mb-10">
-          Your cozy cafe escape in the heart of Kuala Terengganu. Expertly
-          crafted coffee, ice blended drinks, and pastries — all at
-          pocket-friendly prices.
+          A cozy cafe where every cup tells a story. Expertly crafted coffee,
+          ice blended drinks, and pastries — all at pocket-friendly prices.
         </p>
         <div className="flex gap-4">
           <Link
