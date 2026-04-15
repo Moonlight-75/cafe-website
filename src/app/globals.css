@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-charcoal-900: #1a1a1a;
+  --color-charcoal-800: #2a2a2a;
+  --color-charcoal-700: #3a3a3a;
+  --color-charcoal-600: #4a4a4a;
+  --color-charcoal-500: #5a5a5a;
+  --color-cream-50: #faf8f5;
+  --color-cream-100: #f5f0e8;
+  --color-cream-200: #ebe3d5;
+  --color-cream-300: #d4c9b8;
+  --color-cream-400: #b8a98e;
+  --color-warm-600: #c4956a;
+  --color-warm-700: #b07d52;
+  --color-warm-800: #8b6239;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream-50);
+  color: #1a1a1a;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+.animate-scroll-paused {
+  animation-play-state: paused;
 }
