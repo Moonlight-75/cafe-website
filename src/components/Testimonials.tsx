@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
 
 const testimonials = [
@@ -74,8 +74,66 @@ function Stars({ count }: { count: number }) {
 export default function Testimonials() {
   const [headerRef, headerVisible] = useScrollReveal();
   const [sliderRef, sliderVisible] = useScrollReveal();
+  const trackRef = useRef<HTMLDivElement>(null);
   const [paused, setPaused] = useState(false);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const currentTranslate = useRef(0);
+  const prevTranslate = useRef(0);
+  const resumeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   const doubled = [...testimonials, ...testimonials];
+
+  const clearResumeTimeout = useCallback(() => {
+    if (resumeTimeout.current) {
+      clearTimeout(resumeTimeout.current);
+      resumeTimeout.current = null;
+    }
+  }, []);
+
+  const resumeAutoScroll = useCallback(() => {
+    clearResumeTimeout();
+    resumeTimeout.current = setTimeout(() => {
+      if (trackRef.current) {
+        trackRef.current.style.transition = "transform 1s ease-in-out";
+        trackRef.current.style.transform = "";
+        currentTranslate.current = 0;
+        prevTranslate.current = 0;
+        setPaused(false);
+      }
+    }, 2000);
+  }, [clearResumeTimeout]);
+
+  useEffect(() => {
+    return () => clearResumeTimeout();
+  }, [clearResumeTimeout]);
+
+  const handleTouchStart = useCallback(
+    (e: React.TouchEvent) => {
+      isDragging.current = true;
+      startX.current = e.touches[0].clientX;
+      prevTranslate.current = currentTranslate.current;
+      setPaused(true);
+      clearResumeTimeout();
+      if (trackRef.current) {
+        trackRef.current.style.transition = "none";
+      }
+    },
+    [clearResumeTimeout]
+  );
+
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    if (!isDragging.current || !trackRef.current) return;
+    const diff = e.touches[0].clientX - startX.current;
+    currentTranslate.current = prevTranslate.current + diff;
+    trackRef.current.style.transform = `translateX(calc(-50% + ${currentTranslate.current}px))`;
+  }, []);
+
+  const handleTouchEnd = useCallback(() => {
+    if (!isDragging.current) return;
+    isDragging.current = false;
+    resumeAutoScroll();
+  }, [resumeAutoScroll]);
 
   return (
     <section className="py-24 px-6 bg-cream-100">
@@ -100,11 +158,17 @@ export default function Testimonials() {
             sliderVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
           onMouseEnter={() => setPaused(true)}
-          onMouseLeave={() => setPaused(false)}
+          onMouseLeave={() => {
+            resumeAutoScroll();
+          }}
           style={{ maskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)" }}
         >
           <div
-            className={`flex gap-6 animate-scroll ${paused ? "animate-scroll-paused" : ""}`}
+            ref={trackRef}
+            className={`flex gap-6 ${paused ? "animate-scroll-paused" : "animate-scroll"}`}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           >
             {doubled.map((t, i) => (
               <div
